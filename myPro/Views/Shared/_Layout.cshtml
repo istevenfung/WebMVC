@@ -5,12 +5,16 @@
 </head>
 <body>
 	@RenderBody()
-	@Html.ActionLink("Test", "Index", "Test")
+	@Html.ActionLink("TestControl", "Index", "Test")
+	@*Html.ActionLink("ViewResult", "VR", "PV", new { id=1 })*@
 	@*建議這樣寫*@
-	RenderPartial:[
+	<div>RenderPartial:[
 	  @{
 		Html.RenderPartial("PV", ViewData);
 	  }
-	]
+	]</div>
+	<div>RenderAction:[
+		@*Html.RenderAction("MenuView", "PV")*@
+	]</div>
 </body>
 </html>
