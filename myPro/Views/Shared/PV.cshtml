@@ -1,5 +1,11 @@
-@model String
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-PV.cshtml
 <span>@TempData["Hello"]</span>
-<b>@Model</b>
+@model String
+<b id="view" onclick="">@Model "ClickMe"</b>
+
+<script>
+$("#view").on("click", function() {
+  alert('Hello world!');
+});
+</script>
