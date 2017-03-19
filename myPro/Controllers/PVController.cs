@@ -6,11 +6,11 @@ using System.Web.Mvc;
 
 namespace myPro.Controllers
 {
-    public class ABController : Controller
+    public class PVController : Controller
     {
         public ActionResult PV()
 		{
-			ViewBag.part = "Part";
+			ViewBag.part = "PartController
 			return PartialView();
 		}
     }
