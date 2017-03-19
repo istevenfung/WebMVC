@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+	<!--@RenderBody()-->
+	@Html.ActionLink("Home", "Index", "Home")
+	@Html.ActionLink("Test", "Index", "Test")
+	@*建議這樣寫*@
+	@{
+		Html.RenderPartial("PV");
+	}
+</body>
+</html>
