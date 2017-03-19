@@ -1,14 +1,16 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>@ViewBag.Title</title>
+    <title>@ViewBag.title</title>
 </head>
 <body>
 	@RenderBody()
 	@Html.ActionLink("Test", "Index", "Test")
 	@*建議這樣寫*@
-	@{
+	RenderPartial:[
+	  @{
 		Html.RenderPartial("PV");
-	}
+	  }
+	]
 </body>
 </html>
