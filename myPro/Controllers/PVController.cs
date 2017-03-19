@@ -17,9 +17,20 @@ namespace myPro.Controllers
         public PartialViewResult PV()
 	{
 		TempData["Hello"] = "Hello from PartController";
-		//return PartialView();
+		return PartialView();
+
+	}
+
+	public PartialViewResult MenuView()
+	{
 		var data = new MyModel() { Prop1 = 5, Prop2 = 10 };
 		return PartialView("~/Views/Shared/PV.cshtml", data);
 	}
+
+	/*public ViewResult VR(int ID)
+	{
+		int idd = ID + 10;
+		return View(idd);
+	}*/
     }
 }
